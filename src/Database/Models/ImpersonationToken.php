@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Stancl\Tenancy\Database\Models;
 
 use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Support\Str;
 use Stancl\Tenancy\Database\Concerns\CentralConnection;
 
