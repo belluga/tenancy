@@ -6,9 +6,8 @@ namespace Stancl\Tenancy\Database;
 
 use Illuminate\Database\Eloquent\Builder;
 use MongoDB\Laravel\Eloquent\Model;
-use Illuminate\Database\Eloquent\Scope;
 
-class ParentModelScope implements Scope
+class ParentModelScope
 {
     public function apply(Builder $builder, Model $model)
     {

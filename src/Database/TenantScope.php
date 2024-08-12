@@ -6,10 +6,9 @@ namespace Stancl\Tenancy\Database;
 
 use Illuminate\Database\Eloquent\Builder;
 use MongoDB\Laravel\Eloquent\Model;
-use Illuminate\Database\Eloquent\Scope;
 use Stancl\Tenancy\Database\Concerns\BelongsToTenant;
 
-class TenantScope implements Scope
+class TenantScope
 {
     public function apply(Builder $builder, Model $model)
     {
