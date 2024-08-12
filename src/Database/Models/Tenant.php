@@ -6,7 +6,7 @@ namespace Stancl\Tenancy\Database\Models;
 
 use Carbon\Carbon;
 use MongoDB\Laravel\Eloquent\Model;
-use Stancl\Tenancy\Contracts;
+use Stancl\Tenancy\Contracts\Tenant as TenantContract;
 use Stancl\Tenancy\Database\Concerns;
 use Stancl\Tenancy\Database\TenantCollection;
 use Stancl\Tenancy\Events;
@@ -19,7 +19,7 @@ use Stancl\Tenancy\Events;
  *
  * @method static TenantCollection all($columns = ['*'])
  */
-class Tenant extends Model implements Contracts\Tenant
+class Tenant extends Model implements TenantContract
 {
     use Concerns\CentralConnection,
         Concerns\GeneratesIds,
