@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Stancl\Tenancy\Database;
 
-use Illuminate\Database\Eloquent\Collection;
+use MongoDB\Laravel\Collection;
 use Stancl\Tenancy\Contracts\Tenant;
 
 /**

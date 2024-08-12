@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Stancl\Tenancy\Listeners;
 
 use MongoDB\Laravel\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\Pivot;
+use MongoDB\Laravel\Eloquent\Relations\Pivot;
 use Stancl\Tenancy\Contracts\SyncMaster;
 use Stancl\Tenancy\Events\SyncedResourceChangedInForeignDatabase;
 use Stancl\Tenancy\Events\SyncedResourceSaved;

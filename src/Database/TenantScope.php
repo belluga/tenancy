@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Stancl\Tenancy\Database;
 
-use Illuminate\Database\Eloquent\Builder;
+use MongoDB\Laravel\Eloquent\Builder;
 use MongoDB\Laravel\Eloquent\Model;
 use Stancl\Tenancy\Database\Concerns\BelongsToTenant;
 

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Stancl\Tenancy\Contracts;
 
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use MongoDB\Laravel\Eloquent\Collection;
+use MongoDB\Laravel\Relations\BelongsToMany;
 
 /**
  * @property-read Tenant[]|Collection $tenants

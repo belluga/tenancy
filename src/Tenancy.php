@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Stancl\Tenancy;
 
-use Illuminate\Database\Eloquent\Builder;
+use MongoDB\Laravel\Eloquent\Builder;
 use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Support\Traits\Macroable;
 use Stancl\Tenancy\Contracts\TenancyBootstrapper;

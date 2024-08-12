@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Stancl\Tenancy\Resolvers;
 
-use Illuminate\Database\Eloquent\Builder;
+use MongoDB\Laravel\Eloquent\Builder;
 use Stancl\Tenancy\Contracts\Domain;
 use Stancl\Tenancy\Contracts\Tenant;
 use Stancl\Tenancy\Exceptions\TenantCouldNotBeIdentifiedOnDomainException;

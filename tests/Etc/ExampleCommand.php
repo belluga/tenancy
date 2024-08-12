@@ -35,7 +35,7 @@ class ExampleCommand extends Command
     }
 }
 
-class User extends \Illuminate\Database\Eloquent\Model
+class User extends \MongoDB\Laravel\Eloquent\Model
 {
     protected $guarded = [];
 }
