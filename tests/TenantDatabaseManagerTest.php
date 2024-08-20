@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use PDO;
-use Belluga\JobPipeline\JobPipeline;
+use Stancl\JobPipeline\JobPipeline;
 use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
 use Belluga\Tenancy\Database\DatabaseManager;
 use Belluga\Tenancy\Events\TenancyEnded;

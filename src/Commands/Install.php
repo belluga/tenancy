@@ -20,7 +20,7 @@ class Install extends Command
      *
      * @var string
      */
-    protected $description = 'Install stancl/tenancy.';
+    protected $description = 'Install belluga/tenancy.';
 
     /**
      * Execute the console command.
@@ -29,7 +29,7 @@ class Install extends Command
      */
     public function handle()
     {
-        $this->comment('Installing stancl/tenancy...');
+        $this->comment('Installing belluga/tenancy...');
         $this->callSilent('vendor:publish', [
             '--provider' => 'Belluga\Tenancy\TenancyServiceProvider',
             '--tag' => 'config',
@@ -63,6 +63,6 @@ class Install extends Command
             $this->info('✔️  Created database/migrations/tenant folder.');
         }
 
-        $this->comment('✨️ stancl/tenancy installed successfully.');
+        $this->comment('✨️ belluga/tenancy installed successfully.');
     }
 }

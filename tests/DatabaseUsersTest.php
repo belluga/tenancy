@@ -7,7 +7,7 @@ namespace Belluga\Tenancy\Tests;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Str;
-use Belluga\JobPipeline\JobPipeline;
+use Stancl\JobPipeline\JobPipeline;
 use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
 use Belluga\Tenancy\Contracts\ManagesDatabaseUsers;
 use Belluga\Tenancy\Events\DatabaseCreated;

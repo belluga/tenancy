@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticable;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Schema;
-use Belluga\JobPipeline\JobPipeline;
+use Stancl\JobPipeline\JobPipeline;
 use Belluga\Tenancy\Events\TenantCreated;
 use Belluga\Tenancy\Jobs\CreateDatabase;
 use Belluga\Tenancy\Jobs\MigrateDatabase;

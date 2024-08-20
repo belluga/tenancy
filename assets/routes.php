@@ -6,4 +6,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/tenancy/assets/{path?}', 'Belluga\Tenancy\Controllers\TenantAssetsController@asset')
     ->where('path', '(.*)')
-    ->name('stancl.tenancy.asset');
+    ->name('belluga.tenancy.asset');

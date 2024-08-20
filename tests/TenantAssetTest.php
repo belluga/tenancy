@@ -85,7 +85,7 @@ class TenantAssetTest extends TestCase
         $tenant = Tenant::create();
         tenancy()->initialize($tenant);
 
-        $this->assertSame(route('stancl.tenancy.asset', ['path' => 'foo']), asset('foo'));
+        $this->assertSame(route('belluga.tenancy.asset', ['path' => 'foo']), asset('foo'));
     }
 
     /** @test */

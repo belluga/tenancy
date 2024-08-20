@@ -9,7 +9,7 @@ use Illuminate\Bus\Queueable;
 use Spatie\Valuestore\Valuestore;
 use Illuminate\Support\Facades\DB;
 use Belluga\Tenancy\Tests\Etc\User;
-use Belluga\JobPipeline\JobPipeline;
+use Stancl\JobPipeline\JobPipeline;
 use Belluga\Tenancy\Tests\Etc\Tenant;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Queue\SerializesModels;

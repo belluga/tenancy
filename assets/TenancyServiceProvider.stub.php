@@ -7,7 +7,7 @@ namespace App\Providers;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Belluga\JobPipeline\JobPipeline;
+use Stancl\JobPipeline\JobPipeline;
 use Belluga\Tenancy\Events;
 use Belluga\Tenancy\Jobs;
 use Belluga\Tenancy\Listeners;

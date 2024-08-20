@@ -38,7 +38,7 @@ if (! function_exists('tenant_asset')) {
     /** @return string */
     function tenant_asset($asset)
     {
-        return route('stancl.tenancy.asset', ['path' => $asset]);
+        return route('belluga.tenancy.asset', ['path' => $asset]);
     }
 }
 

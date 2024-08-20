@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
-use Belluga\JobPipeline\JobPipeline;
+use Stancl\JobPipeline\JobPipeline;
 use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
 use Belluga\Tenancy\Database\Models\ImpersonationToken;
 use Belluga\Tenancy\Events\TenancyEnded;

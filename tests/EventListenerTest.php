@@ -7,7 +7,7 @@ namespace Belluga\Tenancy\Tests;
 use Illuminate\Events\CallQueuedListener;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Queue;
-use Belluga\JobPipeline\JobPipeline;
+use Stancl\JobPipeline\JobPipeline;
 use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
 use Belluga\Tenancy\Bootstrappers\RedisTenancyBootstrapper;
 use Belluga\Tenancy\Events\BootstrappingTenancy;

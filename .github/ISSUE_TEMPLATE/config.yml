@@ -4,5 +4,5 @@ contact_links:
     url: https://archte.ch/discord
     about: 'If you have a question or need help using the package.'
   - name: Documentation Issue
-    url: https://github.com/stancl/tenancy-docs/issues
+    url: https://github.com/belluga/tenancy-docs/issues
     about: 'Suggest how the documentation could be improved.'

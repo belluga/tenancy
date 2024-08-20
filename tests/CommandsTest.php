@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Schema;
-use Belluga\JobPipeline\JobPipeline;
+use Stancl\JobPipeline\JobPipeline;
 use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
 use Belluga\Tenancy\Events\TenancyEnded;
 use Belluga\Tenancy\Events\TenancyInitialized;

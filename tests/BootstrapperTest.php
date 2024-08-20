@@ -9,7 +9,7 @@ use ReflectionObject;
 use ReflectionProperty;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
-use Belluga\JobPipeline\JobPipeline;
+use Stancl\JobPipeline\JobPipeline;
 use Belluga\Tenancy\Tests\Etc\Tenant;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Event;
