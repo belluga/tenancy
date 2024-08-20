@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Contracts;
+namespace Belluga\Tenancy\Contracts;
 
 use MongoDB\Laravel\Eloquent\Collection;
 use MongoDB\Laravel\Relations\BelongsToMany;

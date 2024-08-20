@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
-use Stancl\Tenancy\Events\TenantCreated;
-use Stancl\Tenancy\Exceptions\TenancyNotInitializedException;
-use Stancl\Tenancy\Middleware\InitializeTenancyBySubdomain;
-use Stancl\Tenancy\Middleware\ScopeSessions;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Events\TenantCreated;
+use Belluga\Tenancy\Exceptions\TenancyNotInitializedException;
+use Belluga\Tenancy\Middleware\InitializeTenancyBySubdomain;
+use Belluga\Tenancy\Middleware\ScopeSessions;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class ScopeSessionsTest extends TestCase
 {

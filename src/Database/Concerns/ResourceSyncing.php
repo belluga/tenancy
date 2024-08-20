@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Database\Concerns;
+namespace Belluga\Tenancy\Database\Concerns;
 
-use Stancl\Tenancy\Contracts\Syncable;
-use Stancl\Tenancy\Contracts\UniqueIdentifierGenerator;
-use Stancl\Tenancy\Events\SyncedResourceSaved;
+use Belluga\Tenancy\Contracts\Syncable;
+use Belluga\Tenancy\Contracts\UniqueIdentifierGenerator;
+use Belluga\Tenancy\Events\SyncedResourceSaved;
 
 trait ResourceSyncing
 {

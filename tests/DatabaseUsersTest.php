@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Str;
-use Stancl\JobPipeline\JobPipeline;
-use Stancl\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
-use Stancl\Tenancy\Contracts\ManagesDatabaseUsers;
-use Stancl\Tenancy\Events\DatabaseCreated;
-use Stancl\Tenancy\Events\TenancyInitialized;
-use Stancl\Tenancy\Events\TenantCreated;
-use Stancl\Tenancy\Exceptions\TenantDatabaseUserAlreadyExistsException;
-use Stancl\Tenancy\Jobs\CreateDatabase;
-use Stancl\Tenancy\Listeners\BootstrapTenancy;
-use Stancl\Tenancy\TenantDatabaseManagers\MySQLDatabaseManager;
-use Stancl\Tenancy\TenantDatabaseManagers\PermissionControlledMySQLDatabaseManager;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\JobPipeline\JobPipeline;
+use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
+use Belluga\Tenancy\Contracts\ManagesDatabaseUsers;
+use Belluga\Tenancy\Events\DatabaseCreated;
+use Belluga\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Events\TenantCreated;
+use Belluga\Tenancy\Exceptions\TenantDatabaseUserAlreadyExistsException;
+use Belluga\Tenancy\Jobs\CreateDatabase;
+use Belluga\Tenancy\Listeners\BootstrapTenancy;
+use Belluga\Tenancy\TenantDatabaseManagers\MySQLDatabaseManager;
+use Belluga\Tenancy\TenantDatabaseManagers\PermissionControlledMySQLDatabaseManager;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class DatabaseUsersTest extends TestCase
 {
@@ -86,7 +86,9 @@ class DatabaseUsersTest extends TestCase
     public function correct_grants_are_given_to_users()
     {
         PermissionControlledMySQLDatabaseManager::$grants = [
-            'ALTER', 'ALTER ROUTINE', 'CREATE',
+            'ALTER',
+            'ALTER ROUTINE',
+            'CREATE',
         ];
 
         $tenant = Tenant::create([

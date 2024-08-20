@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Listeners;
+namespace Belluga\Tenancy\Listeners;
 
-use Stancl\Tenancy\Events\BootstrappingTenancy;
-use Stancl\Tenancy\Events\TenancyBootstrapped;
-use Stancl\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Events\BootstrappingTenancy;
+use Belluga\Tenancy\Events\TenancyBootstrapped;
+use Belluga\Tenancy\Events\TenancyInitialized;
 
 class BootstrapTenancy
 {

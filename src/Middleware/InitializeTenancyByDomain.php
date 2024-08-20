@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Middleware;
+namespace Belluga\Tenancy\Middleware;
 
 use Closure;
-use Stancl\Tenancy\Resolvers\DomainTenantResolver;
-use Stancl\Tenancy\Tenancy;
+use Belluga\Tenancy\Resolvers\DomainTenantResolver;
+use Belluga\Tenancy\Tenancy;
 
 class InitializeTenancyByDomain extends IdentificationMiddleware
 {
@@ -35,7 +35,9 @@ class InitializeTenancyByDomain extends IdentificationMiddleware
     public function handle($request, Closure $next)
     {
         return $this->initializeTenancy(
-            $request, $next, $request->getHost()
+            $request,
+            $next,
+            $request->getHost()
         );
     }
 }

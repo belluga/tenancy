@@ -2,32 +2,32 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Exception;
 use Illuminate\Bus\Queueable;
 use Spatie\Valuestore\Valuestore;
 use Illuminate\Support\Facades\DB;
-use Stancl\Tenancy\Tests\Etc\User;
-use Stancl\JobPipeline\JobPipeline;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Tests\Etc\User;
+use Belluga\JobPipeline\JobPipeline;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Schema;
-use Stancl\Tenancy\Events\TenancyEnded;
-use Stancl\Tenancy\Jobs\CreateDatabase;
+use Belluga\Tenancy\Events\TenancyEnded;
+use Belluga\Tenancy\Jobs\CreateDatabase;
 use Illuminate\Queue\InteractsWithQueue;
-use Stancl\Tenancy\Events\TenantCreated;
+use Belluga\Tenancy\Events\TenantCreated;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Queue\Events\JobProcessed;
 use Illuminate\Queue\Events\JobProcessing;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use Stancl\Tenancy\Events\TenancyInitialized;
-use Stancl\Tenancy\Listeners\BootstrapTenancy;
-use Stancl\Tenancy\Listeners\RevertToCentralContext;
-use Stancl\Tenancy\Bootstrappers\QueueTenancyBootstrapper;
-use Stancl\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
+use Belluga\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Listeners\BootstrapTenancy;
+use Belluga\Tenancy\Listeners\RevertToCentralContext;
+use Belluga\Tenancy\Bootstrappers\QueueTenancyBootstrapper;
+use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
 
 class QueueTest extends TestCase
 {

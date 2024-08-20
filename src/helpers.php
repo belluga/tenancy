@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Tenancy;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Tenancy;
 
 if (! function_exists('tenancy')) {
     /** @return Tenancy */

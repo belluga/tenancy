@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Database\Models;
+namespace Belluga\Tenancy\Database\Models;
 
 use Carbon\Carbon;
 use MongoDB\Laravel\Eloquent\Model;
-use Stancl\Tenancy\Contracts\Tenant as TenantContract;
-use Stancl\Tenancy\Database\Concerns;
-use Stancl\Tenancy\Database\TenantCollection;
-use Stancl\Tenancy\Events;
+use Belluga\Tenancy\Contracts\Tenant as TenantContract;
+use Belluga\Tenancy\Database\Concerns;
+use Belluga\Tenancy\Database\TenantCollection;
+use Belluga\Tenancy\Events;
 
 /**
  * @property string|int $id

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Middleware;
+namespace Belluga\Tenancy\Middleware;
 
 use Closure;
 use Exception;
 use Illuminate\Http\Response;
 use Illuminate\Support\Str;
-use Stancl\Tenancy\Exceptions\NotASubdomainException;
+use Belluga\Tenancy\Exceptions\NotASubdomainException;
 
 class InitializeTenancyBySubdomain extends InitializeTenancyByDomain
 {

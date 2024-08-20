@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Database\Concerns;
+namespace Belluga\Tenancy\Database\Concerns;
 
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Resolvers;
-use Stancl\Tenancy\Resolvers\Contracts\CachedTenantResolver;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Resolvers;
+use Belluga\Tenancy\Resolvers\Contracts\CachedTenantResolver;
 
 trait InvalidatesResolverCache
 {

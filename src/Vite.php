@@ -1,6 +1,6 @@
 <?php
 
-namespace Stancl\Tenancy;
+namespace Belluga\Tenancy;
 
 use Illuminate\Foundation\Vite as BaseVite;
 

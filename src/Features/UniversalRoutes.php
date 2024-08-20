@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Features;
+namespace Belluga\Tenancy\Features;
 
 use Closure;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Route as Router;
-use Stancl\Tenancy\Contracts\Feature;
-use Stancl\Tenancy\Middleware;
-use Stancl\Tenancy\Tenancy;
+use Belluga\Tenancy\Contracts\Feature;
+use Belluga\Tenancy\Middleware;
+use Belluga\Tenancy\Tenancy;
 
 class UniversalRoutes implements Feature
 {

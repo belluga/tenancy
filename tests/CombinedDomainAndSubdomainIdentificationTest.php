@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Support\Facades\Route;
-use Stancl\Tenancy\Database\Concerns\HasDomains;
-use Stancl\Tenancy\Database\Models;
-use Stancl\Tenancy\Middleware\InitializeTenancyByDomainOrSubdomain;
+use Belluga\Tenancy\Database\Concerns\HasDomains;
+use Belluga\Tenancy\Database\Models;
+use Belluga\Tenancy\Middleware\InitializeTenancyByDomainOrSubdomain;
 
 class CombinedDomainAndSubdomainIdentificationTest extends TestCase
 {

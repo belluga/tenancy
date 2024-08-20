@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Facades;
+namespace Belluga\Tenancy\Facades;
 
 use Illuminate\Support\Facades\Cache;
 

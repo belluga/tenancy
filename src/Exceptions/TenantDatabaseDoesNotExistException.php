@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Exceptions;
+namespace Belluga\Tenancy\Exceptions;
 
 use Exception;
 

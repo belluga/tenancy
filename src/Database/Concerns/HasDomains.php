@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Database\Concerns;
+namespace Belluga\Tenancy\Database\Concerns;
 
-use Stancl\Tenancy\Contracts\Domain;
+use Belluga\Tenancy\Contracts\Domain;
 
 /**
  * @property-read Domain[]|\MongoDB\Laravel\Eloquent\Collection $domains

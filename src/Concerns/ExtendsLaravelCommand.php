@@ -1,6 +1,6 @@
 <?php
 
-namespace Stancl\Tenancy\Concerns;
+namespace Belluga\Tenancy\Concerns;
 
 trait ExtendsLaravelCommand
 {

@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Events;
+namespace Belluga\Tenancy\Events;
 
-class RevertingToCentralContext extends Contracts\TenancyEvent
-{
-}
+class RevertingToCentralContext extends Contracts\TenancyEvent {}

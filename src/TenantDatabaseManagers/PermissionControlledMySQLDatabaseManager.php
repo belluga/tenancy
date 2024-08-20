@@ -2,20 +2,35 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\TenantDatabaseManagers;
+namespace Belluga\Tenancy\TenantDatabaseManagers;
 
-use Stancl\Tenancy\Concerns\CreatesDatabaseUsers;
-use Stancl\Tenancy\Contracts\ManagesDatabaseUsers;
-use Stancl\Tenancy\DatabaseConfig;
+use Belluga\Tenancy\Concerns\CreatesDatabaseUsers;
+use Belluga\Tenancy\Contracts\ManagesDatabaseUsers;
+use Belluga\Tenancy\DatabaseConfig;
 
 class PermissionControlledMySQLDatabaseManager extends MySQLDatabaseManager implements ManagesDatabaseUsers
 {
     use CreatesDatabaseUsers;
 
     public static $grants = [
-        'ALTER', 'ALTER ROUTINE', 'CREATE', 'CREATE ROUTINE', 'CREATE TEMPORARY TABLES', 'CREATE VIEW',
-        'DELETE', 'DROP', 'EVENT', 'EXECUTE', 'INDEX', 'INSERT', 'LOCK TABLES', 'REFERENCES', 'SELECT',
-        'SHOW VIEW', 'TRIGGER', 'UPDATE',
+        'ALTER',
+        'ALTER ROUTINE',
+        'CREATE',
+        'CREATE ROUTINE',
+        'CREATE TEMPORARY TABLES',
+        'CREATE VIEW',
+        'DELETE',
+        'DROP',
+        'EVENT',
+        'EXECUTE',
+        'INDEX',
+        'INSERT',
+        'LOCK TABLES',
+        'REFERENCES',
+        'SELECT',
+        'SHOW VIEW',
+        'TRIGGER',
+        'UPDATE',
     ];
 
     public function createUser(DatabaseConfig $databaseConfig): bool

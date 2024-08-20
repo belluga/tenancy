@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
-use Stancl\Tenancy\Bootstrappers\FilesystemTenancyBootstrapper;
-use Stancl\Tenancy\Controllers\TenantAssetsController;
-use Stancl\Tenancy\Events\TenancyInitialized;
-use Stancl\Tenancy\Listeners\BootstrapTenancy;
-use Stancl\Tenancy\Middleware\InitializeTenancyByDomain;
-use Stancl\Tenancy\Middleware\InitializeTenancyByRequestData;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Bootstrappers\FilesystemTenancyBootstrapper;
+use Belluga\Tenancy\Controllers\TenantAssetsController;
+use Belluga\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Listeners\BootstrapTenancy;
+use Belluga\Tenancy\Middleware\InitializeTenancyByDomain;
+use Belluga\Tenancy\Middleware\InitializeTenancyByRequestData;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class TenantAssetTest extends TestCase
 {

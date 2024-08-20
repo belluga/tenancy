@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Middleware;
+namespace Belluga\Tenancy\Middleware;
 
-use Stancl\Tenancy\Contracts\TenantCouldNotBeIdentifiedException;
-use Stancl\Tenancy\Contracts\TenantResolver;
-use Stancl\Tenancy\Tenancy;
+use Belluga\Tenancy\Contracts\TenantCouldNotBeIdentifiedException;
+use Belluga\Tenancy\Contracts\TenantResolver;
+use Belluga\Tenancy\Tenancy;
 
 abstract class IdentificationMiddleware
 {

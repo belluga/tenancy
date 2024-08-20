@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Database\Concerns;
+namespace Belluga\Tenancy\Database\Concerns;
 
-use Stancl\VirtualColumn\VirtualColumn;
+use Belluga\VirtualColumn\VirtualColumn;
 
 /**
  * Extends VirtualColumn for backwards compatibility. This trait will be removed in v4.

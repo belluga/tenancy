@@ -2,29 +2,29 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use PDO;
-use Stancl\JobPipeline\JobPipeline;
-use Stancl\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
-use Stancl\Tenancy\Database\DatabaseManager;
-use Stancl\Tenancy\Events\TenancyEnded;
-use Stancl\Tenancy\Events\TenancyInitialized;
-use Stancl\Tenancy\Events\TenantCreated;
-use Stancl\Tenancy\Exceptions\TenantDatabaseAlreadyExistsException;
-use Stancl\Tenancy\Jobs\CreateDatabase;
-use Stancl\Tenancy\Listeners\BootstrapTenancy;
-use Stancl\Tenancy\Listeners\RevertToCentralContext;
-use Stancl\Tenancy\TenantDatabaseManagers\MySQLDatabaseManager;
-use Stancl\Tenancy\TenantDatabaseManagers\PermissionControlledMySQLDatabaseManager;
-use Stancl\Tenancy\TenantDatabaseManagers\PostgreSQLDatabaseManager;
-use Stancl\Tenancy\TenantDatabaseManagers\PostgreSQLSchemaManager;
-use Stancl\Tenancy\TenantDatabaseManagers\SQLiteDatabaseManager;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\JobPipeline\JobPipeline;
+use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
+use Belluga\Tenancy\Database\DatabaseManager;
+use Belluga\Tenancy\Events\TenancyEnded;
+use Belluga\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Events\TenantCreated;
+use Belluga\Tenancy\Exceptions\TenantDatabaseAlreadyExistsException;
+use Belluga\Tenancy\Jobs\CreateDatabase;
+use Belluga\Tenancy\Listeners\BootstrapTenancy;
+use Belluga\Tenancy\Listeners\RevertToCentralContext;
+use Belluga\Tenancy\TenantDatabaseManagers\MySQLDatabaseManager;
+use Belluga\Tenancy\TenantDatabaseManagers\PermissionControlledMySQLDatabaseManager;
+use Belluga\Tenancy\TenantDatabaseManagers\PostgreSQLDatabaseManager;
+use Belluga\Tenancy\TenantDatabaseManagers\PostgreSQLSchemaManager;
+use Belluga\Tenancy\TenantDatabaseManagers\SQLiteDatabaseManager;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class TenantDatabaseManagerTest extends TestCase
 {
@@ -175,7 +175,7 @@ class TenantDatabaseManagerTest extends TestCase
     public function schema_manager_uses_schema_to_separate_tenant_dbs()
     {
         config([
-            'tenancy.database.managers.pgsql' => \Stancl\Tenancy\TenantDatabaseManagers\PostgreSQLSchemaManager::class,
+            'tenancy.database.managers.pgsql' => \Belluga\Tenancy\TenantDatabaseManagers\PostgreSQLSchemaManager::class,
             'tenancy.boostrappers' => [
                 DatabaseTenancyBootstrapper::class,
             ],

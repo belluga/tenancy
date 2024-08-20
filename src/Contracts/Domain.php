@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Contracts;
+namespace Belluga\Tenancy\Contracts;
 
 /**
  * @property-read Tenant $tenant
  *
- * @see \Stancl\Tenancy\Database\Models\Domain
+ * @see \Belluga\Tenancy\Database\Models\Domain
  *
  * @method __call(string $method, array $parameters) IDE support. This will be a model.
  * @method static __callStatic(string $method, array $parameters) IDE support. This will be a model.

@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Stancl\\Tenancy\\": "src/"
+            "Belluga\\Tenancy\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -36,17 +36,17 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Stancl\\Tenancy\\Tests\\": "tests/"
+            "Belluga\\Tenancy\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Stancl\\Tenancy\\TenancyServiceProvider"
+                "Belluga\\Tenancy\\TenancyServiceProvider"
             ],
             "aliases": {
-                "Tenancy": "Stancl\\Tenancy\\Facades\\Tenancy",
-                "GlobalCache": "Stancl\\Tenancy\\Facades\\GlobalCache"
+                "Tenancy": "Belluga\\Tenancy\\Facades\\Tenancy",
+                "GlobalCache": "Belluga\\Tenancy\\Facades\\GlobalCache"
             }
         }
     },

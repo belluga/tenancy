@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Events\CallQueuedListener;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Queue;
-use Stancl\JobPipeline\JobPipeline;
-use Stancl\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
-use Stancl\Tenancy\Bootstrappers\RedisTenancyBootstrapper;
-use Stancl\Tenancy\Events\BootstrappingTenancy;
-use Stancl\Tenancy\Events\CreatingDatabase;
-use Stancl\Tenancy\Events\CreatingTenant;
-use Stancl\Tenancy\Events\TenancyInitialized;
-use Stancl\Tenancy\Events\TenantCreated;
-use Stancl\Tenancy\Events\UpdatingDomain;
-use Stancl\Tenancy\Jobs\CreateDatabase;
-use Stancl\Tenancy\Jobs\MigrateDatabase;
-use Stancl\Tenancy\Listeners\BootstrapTenancy;
-use Stancl\Tenancy\Listeners\QueueableListener;
-use Stancl\Tenancy\Tenancy;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\JobPipeline\JobPipeline;
+use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
+use Belluga\Tenancy\Bootstrappers\RedisTenancyBootstrapper;
+use Belluga\Tenancy\Events\BootstrappingTenancy;
+use Belluga\Tenancy\Events\CreatingDatabase;
+use Belluga\Tenancy\Events\CreatingTenant;
+use Belluga\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Events\TenantCreated;
+use Belluga\Tenancy\Events\UpdatingDomain;
+use Belluga\Tenancy\Jobs\CreateDatabase;
+use Belluga\Tenancy\Jobs\MigrateDatabase;
+use Belluga\Tenancy\Listeners\BootstrapTenancy;
+use Belluga\Tenancy\Listeners\QueueableListener;
+use Belluga\Tenancy\Tenancy;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class EventListenerTest extends TestCase
 {

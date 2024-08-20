@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Bootstrappers;
+namespace Belluga\Tenancy\Bootstrappers;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\Storage;
-use Stancl\Tenancy\Contracts\TenancyBootstrapper;
-use Stancl\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Contracts\TenancyBootstrapper;
+use Belluga\Tenancy\Contracts\Tenant;
 
 class FilesystemTenancyBootstrapper implements TenancyBootstrapper
 {
@@ -67,7 +67,7 @@ class FilesystemTenancyBootstrapper implements TenancyBootstrapper
 
             if (! $finalPrefix) {
                 $finalPrefix = $originalRoot
-                    ? rtrim($originalRoot, '/') . '/'. $suffix
+                    ? rtrim($originalRoot, '/') . '/' . $suffix
                     : $suffix;
             }
 

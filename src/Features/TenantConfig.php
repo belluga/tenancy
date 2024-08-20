@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Features;
+namespace Belluga\Tenancy\Features;
 
 use Illuminate\Contracts\Config\Repository;
 use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Event;
-use Stancl\Tenancy\Contracts\Feature;
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Events\RevertedToCentralContext;
-use Stancl\Tenancy\Events\TenancyBootstrapped;
-use Stancl\Tenancy\Tenancy;
+use Belluga\Tenancy\Contracts\Feature;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Events\RevertedToCentralContext;
+use Belluga\Tenancy\Events\TenancyBootstrapped;
+use Belluga\Tenancy\Tenancy;
 
 class TenantConfig implements Feature
 {

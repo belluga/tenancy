@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Support\Facades\Route;
-use Stancl\Tenancy\Features\UniversalRoutes;
-use Stancl\Tenancy\Middleware\InitializeTenancyByDomain;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Features\UniversalRoutes;
+use Belluga\Tenancy\Middleware\InitializeTenancyByDomain;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class UniversalRouteTest extends TestCase
 {

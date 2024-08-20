@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy;
+namespace Belluga\Tenancy;
 
 use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
-use Stancl\Tenancy\Contracts\ManagesDatabaseUsers;
-use Stancl\Tenancy\Contracts\TenantDatabaseManager;
-use Stancl\Tenancy\Contracts\TenantWithDatabase as Tenant;
-use Stancl\Tenancy\Exceptions\DatabaseManagerNotRegisteredException;
+use Belluga\Tenancy\Contracts\ManagesDatabaseUsers;
+use Belluga\Tenancy\Contracts\TenantDatabaseManager;
+use Belluga\Tenancy\Contracts\TenantWithDatabase as Tenant;
+use Belluga\Tenancy\Exceptions\DatabaseManagerNotRegisteredException;
 
 class DatabaseConfig
 {
@@ -113,7 +113,8 @@ class DatabaseConfig
         $templateConnection = config("database.connections.{$template}");
 
         return $this->manager()->makeConnectionConfig(
-            array_merge($templateConnection, $this->tenantConfig()), $this->getName()
+            array_merge($templateConnection, $this->tenantConfig()),
+            $this->getName()
         );
     }
 

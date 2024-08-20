@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Bootstrappers;
+namespace Belluga\Tenancy\Bootstrappers;
 
-use Stancl\Tenancy\Contracts\TenancyBootstrapper;
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Contracts\TenantWithDatabase;
-use Stancl\Tenancy\Database\DatabaseManager;
-use Stancl\Tenancy\Exceptions\TenantDatabaseDoesNotExistException;
+use Belluga\Tenancy\Contracts\TenancyBootstrapper;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Contracts\TenantWithDatabase;
+use Belluga\Tenancy\Database\DatabaseManager;
+use Belluga\Tenancy\Exceptions\TenantDatabaseDoesNotExistException;
 
 class DatabaseTenancyBootstrapper implements TenancyBootstrapper
 {

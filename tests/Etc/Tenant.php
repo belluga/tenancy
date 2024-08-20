@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests\Etc;
+namespace Belluga\Tenancy\Tests\Etc;
 
-use Stancl\Tenancy\Contracts\TenantWithDatabase;
-use Stancl\Tenancy\Database\Concerns\HasDatabase;
-use Stancl\Tenancy\Database\Concerns\HasDomains;
-use Stancl\Tenancy\Database\Models;
+use Belluga\Tenancy\Contracts\TenantWithDatabase;
+use Belluga\Tenancy\Database\Concerns\HasDatabase;
+use Belluga\Tenancy\Database\Concerns\HasDomains;
+use Belluga\Tenancy\Database\Models;
 
 class Tenant extends Models\Tenant implements TenantWithDatabase
 {

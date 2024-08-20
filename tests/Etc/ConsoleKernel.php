@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests\Etc;
+namespace Belluga\Tenancy\Tests\Etc;
 
 use Orchestra\Testbench\Foundation\Console\Kernel;
 

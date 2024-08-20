@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Commands;
+namespace Belluga\Tenancy\Commands;
 
 use Illuminate\Console\Command;
-use Stancl\Tenancy\Concerns\DealsWithMigrations;
-use Stancl\Tenancy\Concerns\HasATenantsOption;
+use Belluga\Tenancy\Concerns\DealsWithMigrations;
+use Belluga\Tenancy\Concerns\HasATenantsOption;
 use Symfony\Component\Console\Input\InputOption;
 
 final class MigrateFresh extends Command

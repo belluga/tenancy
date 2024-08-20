@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Database\QueryException;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Validator;
-use Stancl\Tenancy\Database\Concerns\BelongsToPrimaryModel;
-use Stancl\Tenancy\Database\Concerns\BelongsToTenant;
-use Stancl\Tenancy\Database\Concerns\HasScopedValidationRules;
-use Stancl\Tenancy\Tests\Etc\Tenant as TestTenant;
+use Belluga\Tenancy\Database\Concerns\BelongsToPrimaryModel;
+use Belluga\Tenancy\Database\Concerns\BelongsToTenant;
+use Belluga\Tenancy\Database\Concerns\HasScopedValidationRules;
+use Belluga\Tenancy\Tests\Etc\Tenant as TestTenant;
 
 class SingleDatabaseTenancyTest extends TestCase
 {

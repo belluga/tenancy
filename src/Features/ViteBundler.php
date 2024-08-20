@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Features;
+namespace Belluga\Tenancy\Features;
 
 use Illuminate\Foundation\Application;
-use Stancl\Tenancy\Contracts\Feature;
-use Stancl\Tenancy\Tenancy;
-use Stancl\Tenancy\Vite;
+use Belluga\Tenancy\Contracts\Feature;
+use Belluga\Tenancy\Tenancy;
+use Belluga\Tenancy\Vite;
 
 class ViteBundler implements Feature
 {

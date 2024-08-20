@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests\Features;
+namespace Belluga\Tenancy\Tests\Features;
 
 use Illuminate\Support\Facades\Route;
-use Stancl\Tenancy\Features\CrossDomainRedirect;
-use Stancl\Tenancy\Tests\Etc\Tenant;
-use Stancl\Tenancy\Tests\TestCase;
+use Belluga\Tenancy\Features\CrossDomainRedirect;
+use Belluga\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Tests\TestCase;
 
 class RedirectTest extends TestCase
 {

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Listeners;
+namespace Belluga\Tenancy\Listeners;
 
 use MongoDB\Laravel\Eloquent\Model;
 use MongoDB\Laravel\Eloquent\Relations\Pivot;
-use Stancl\Tenancy\Contracts\SyncMaster;
-use Stancl\Tenancy\Events\SyncedResourceChangedInForeignDatabase;
-use Stancl\Tenancy\Events\SyncedResourceSaved;
-use Stancl\Tenancy\Exceptions\ModelNotSyncMasterException;
+use Belluga\Tenancy\Contracts\SyncMaster;
+use Belluga\Tenancy\Events\SyncedResourceChangedInForeignDatabase;
+use Belluga\Tenancy\Events\SyncedResourceSaved;
+use Belluga\Tenancy\Exceptions\ModelNotSyncMasterException;
 
 class UpdateSyncedResource extends QueueableListener
 {

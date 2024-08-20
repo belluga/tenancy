@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Database\Concerns;
+namespace Belluga\Tenancy\Database\Concerns;
 
-use Stancl\Tenancy\Contracts\TenantWithDatabase;
-use Stancl\Tenancy\DatabaseConfig;
+use Belluga\Tenancy\Contracts\TenantWithDatabase;
+use Belluga\Tenancy\DatabaseConfig;
 
 trait HasDatabase
 {

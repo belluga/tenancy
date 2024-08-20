@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Commands;
+namespace Belluga\Tenancy\Commands;
 
 use Illuminate\Database\ConnectionResolverInterface;
 use Illuminate\Database\Console\Seeds\SeedCommand;
-use Stancl\Tenancy\Concerns\HasATenantsOption;
-use Stancl\Tenancy\Events\DatabaseSeeded;
-use Stancl\Tenancy\Events\SeedingDatabase;
+use Belluga\Tenancy\Concerns\HasATenantsOption;
+use Belluga\Tenancy\Events\DatabaseSeeded;
+use Belluga\Tenancy\Events\SeedingDatabase;
 
 class Seed extends SeedCommand
 {

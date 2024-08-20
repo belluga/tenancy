@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Events;
+namespace Belluga\Tenancy\Events;
 
-use Stancl\Tenancy\Contracts\Syncable;
-use Stancl\Tenancy\Contracts\TenantWithDatabase;
+use Belluga\Tenancy\Contracts\Syncable;
+use Belluga\Tenancy\Contracts\TenantWithDatabase;
 
 class SyncedResourceChangedInForeignDatabase
 {

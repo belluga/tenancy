@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy;
+namespace Belluga\Tenancy;
 
 use Illuminate\Cache\CacheManager as BaseCacheManager;
 
@@ -21,7 +21,7 @@ class CacheManager extends BaseCacheManager
 
         if ($method === 'tags') {
             $count = count($parameters);
-            
+
             if ($count !== 1) {
                 throw new \Exception("Method tags() takes exactly 1 argument. $count passed.");
             }

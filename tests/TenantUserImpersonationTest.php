@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Carbon\Carbon;
 use Carbon\CarbonInterval;
@@ -13,19 +13,19 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
-use Stancl\JobPipeline\JobPipeline;
-use Stancl\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
-use Stancl\Tenancy\Database\Models\ImpersonationToken;
-use Stancl\Tenancy\Events\TenancyEnded;
-use Stancl\Tenancy\Events\TenancyInitialized;
-use Stancl\Tenancy\Events\TenantCreated;
-use Stancl\Tenancy\Features\UserImpersonation;
-use Stancl\Tenancy\Jobs\CreateDatabase;
-use Stancl\Tenancy\Listeners\BootstrapTenancy;
-use Stancl\Tenancy\Listeners\RevertToCentralContext;
-use Stancl\Tenancy\Middleware\InitializeTenancyByDomain;
-use Stancl\Tenancy\Middleware\InitializeTenancyByPath;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\JobPipeline\JobPipeline;
+use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
+use Belluga\Tenancy\Database\Models\ImpersonationToken;
+use Belluga\Tenancy\Events\TenancyEnded;
+use Belluga\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Events\TenantCreated;
+use Belluga\Tenancy\Features\UserImpersonation;
+use Belluga\Tenancy\Jobs\CreateDatabase;
+use Belluga\Tenancy\Listeners\BootstrapTenancy;
+use Belluga\Tenancy\Listeners\RevertToCentralContext;
+use Belluga\Tenancy\Middleware\InitializeTenancyByDomain;
+use Belluga\Tenancy\Middleware\InitializeTenancyByPath;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class TenantUserImpersonationTest extends TestCase
 {

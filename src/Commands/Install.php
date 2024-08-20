@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Commands;
+namespace Belluga\Tenancy\Commands;
 
 use Illuminate\Console\Command;
 
@@ -31,14 +31,14 @@ class Install extends Command
     {
         $this->comment('Installing stancl/tenancy...');
         $this->callSilent('vendor:publish', [
-            '--provider' => 'Stancl\Tenancy\TenancyServiceProvider',
+            '--provider' => 'Belluga\Tenancy\TenancyServiceProvider',
             '--tag' => 'config',
         ]);
         $this->info('✔️  Created config/tenancy.php');
 
         if (! file_exists(base_path('routes/tenant.php'))) {
             $this->callSilent('vendor:publish', [
-                '--provider' => 'Stancl\Tenancy\TenancyServiceProvider',
+                '--provider' => 'Belluga\Tenancy\TenancyServiceProvider',
                 '--tag' => 'routes',
             ]);
             $this->info('✔️  Created routes/tenant.php');
@@ -47,13 +47,13 @@ class Install extends Command
         }
 
         $this->callSilent('vendor:publish', [
-            '--provider' => 'Stancl\Tenancy\TenancyServiceProvider',
+            '--provider' => 'Belluga\Tenancy\TenancyServiceProvider',
             '--tag' => 'providers',
         ]);
         $this->info('✔️  Created TenancyServiceProvider.php');
 
         $this->callSilent('vendor:publish', [
-            '--provider' => 'Stancl\Tenancy\TenancyServiceProvider',
+            '--provider' => 'Belluga\Tenancy\TenancyServiceProvider',
             '--tag' => 'migrations',
         ]);
         $this->info('✔️  Created migrations. Remember to run [php artisan migrate]!');

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Middleware;
+namespace Belluga\Tenancy\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Stancl\Tenancy\Contracts\TenantResolver;
-use Stancl\Tenancy\Resolvers\RequestDataTenantResolver;
-use Stancl\Tenancy\Tenancy;
+use Belluga\Tenancy\Contracts\TenantResolver;
+use Belluga\Tenancy\Resolvers\RequestDataTenantResolver;
+use Belluga\Tenancy\Tenancy;
 
 class InitializeTenancyByRequestData extends IdentificationMiddleware
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Database\Concerns;
+namespace Belluga\Tenancy\Database\Concerns;
 
-use Stancl\Tenancy\Database\ParentModelScope;
+use Belluga\Tenancy\Database\ParentModelScope;
 
 trait BelongsToPrimaryModel
 {

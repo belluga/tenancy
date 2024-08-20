@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
-use Stancl\JobPipeline\JobPipeline;
-use Stancl\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
-use Stancl\Tenancy\Contracts;
-use Stancl\Tenancy\Contracts\UniqueIdentifierGenerator;
-use Stancl\Tenancy\Database\TenantCollection;
-use Stancl\Tenancy\Events\TenancyInitialized;
-use Stancl\Tenancy\Events\TenantCreated;
-use Stancl\Tenancy\Jobs\CreateDatabase;
-use Stancl\Tenancy\Listeners\BootstrapTenancy;
-use Stancl\Tenancy\Tests\Etc\Tenant;
-use Stancl\Tenancy\UUIDGenerator;
+use Belluga\JobPipeline\JobPipeline;
+use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
+use Belluga\Tenancy\Contracts;
+use Belluga\Tenancy\Contracts\UniqueIdentifierGenerator;
+use Belluga\Tenancy\Database\TenantCollection;
+use Belluga\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Events\TenantCreated;
+use Belluga\Tenancy\Jobs\CreateDatabase;
+use Belluga\Tenancy\Listeners\BootstrapTenancy;
+use Belluga\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\UUIDGenerator;
 
 class TenantModelTest extends TestCase
 {

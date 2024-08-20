@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Exceptions;
+namespace Belluga\Tenancy\Exceptions;
 
-use Stancl\Tenancy\Contracts\TenantCannotBeCreatedException;
+use Belluga\Tenancy\Contracts\TenantCannotBeCreatedException;
 
 class TenantDatabaseUserAlreadyExistsException extends TenantCannotBeCreatedException
 {

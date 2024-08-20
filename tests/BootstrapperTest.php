@@ -2,29 +2,29 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Filesystem\FilesystemAdapter;
 use ReflectionObject;
 use ReflectionProperty;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
-use Stancl\JobPipeline\JobPipeline;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\JobPipeline\JobPipeline;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Storage;
-use Stancl\Tenancy\Events\TenancyEnded;
-use Stancl\Tenancy\Jobs\CreateDatabase;
-use Stancl\Tenancy\Events\TenantCreated;
-use Stancl\Tenancy\Events\TenancyInitialized;
-use Stancl\Tenancy\Listeners\BootstrapTenancy;
-use Stancl\Tenancy\Listeners\RevertToCentralContext;
-use Stancl\Tenancy\Bootstrappers\CacheTenancyBootstrapper;
-use Stancl\Tenancy\Bootstrappers\RedisTenancyBootstrapper;
-use Stancl\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
-use Stancl\Tenancy\Bootstrappers\FilesystemTenancyBootstrapper;
+use Belluga\Tenancy\Events\TenancyEnded;
+use Belluga\Tenancy\Jobs\CreateDatabase;
+use Belluga\Tenancy\Events\TenantCreated;
+use Belluga\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Listeners\BootstrapTenancy;
+use Belluga\Tenancy\Listeners\RevertToCentralContext;
+use Belluga\Tenancy\Bootstrappers\CacheTenancyBootstrapper;
+use Belluga\Tenancy\Bootstrappers\RedisTenancyBootstrapper;
+use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
+use Belluga\Tenancy\Bootstrappers\FilesystemTenancyBootstrapper;
 
 class BootstrapperTest extends TestCase
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Concerns;
+namespace Belluga\Tenancy\Concerns;
 
 use Symfony\Component\Console\Input\InputArgument;
 

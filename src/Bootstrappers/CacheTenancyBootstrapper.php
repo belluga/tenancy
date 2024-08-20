@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Bootstrappers;
+namespace Belluga\Tenancy\Bootstrappers;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\Cache;
-use Stancl\Tenancy\CacheManager as TenantCacheManager;
-use Stancl\Tenancy\Contracts\TenancyBootstrapper;
-use Stancl\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\CacheManager as TenantCacheManager;
+use Belluga\Tenancy\Contracts\TenancyBootstrapper;
+use Belluga\Tenancy\Contracts\Tenant;
 
 class CacheTenancyBootstrapper implements TenancyBootstrapper
 {

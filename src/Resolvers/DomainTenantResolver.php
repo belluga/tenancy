@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Resolvers;
+namespace Belluga\Tenancy\Resolvers;
 
 use MongoDB\Laravel\Eloquent\Builder;
-use Stancl\Tenancy\Contracts\Domain;
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Exceptions\TenantCouldNotBeIdentifiedOnDomainException;
+use Belluga\Tenancy\Contracts\Domain;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Exceptions\TenantCouldNotBeIdentifiedOnDomainException;
 
 class DomainTenantResolver extends Contracts\CachedTenantResolver
 {

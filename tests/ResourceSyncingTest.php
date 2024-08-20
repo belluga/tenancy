@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use MongoDB\Laravel\Eloquent\Model;
 use MongoDB\Laravel\Eloquent\Relations\BelongsToMany;
@@ -10,25 +10,25 @@ use Illuminate\Events\CallQueuedListener;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Str;
-use Stancl\JobPipeline\JobPipeline;
-use Stancl\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
-use Stancl\Tenancy\Contracts\Syncable;
-use Stancl\Tenancy\Contracts\SyncMaster;
-use Stancl\Tenancy\Database\Concerns\CentralConnection;
-use Stancl\Tenancy\Database\Concerns\ResourceSyncing;
-use Stancl\Tenancy\Database\Models\TenantPivot;
-use Stancl\Tenancy\DatabaseConfig;
-use Stancl\Tenancy\Events\SyncedResourceChangedInForeignDatabase;
-use Stancl\Tenancy\Events\SyncedResourceSaved;
-use Stancl\Tenancy\Events\TenancyEnded;
-use Stancl\Tenancy\Events\TenancyInitialized;
-use Stancl\Tenancy\Events\TenantCreated;
-use Stancl\Tenancy\Exceptions\ModelNotSyncMasterException;
-use Stancl\Tenancy\Jobs\CreateDatabase;
-use Stancl\Tenancy\Listeners\BootstrapTenancy;
-use Stancl\Tenancy\Listeners\RevertToCentralContext;
-use Stancl\Tenancy\Listeners\UpdateSyncedResource;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\JobPipeline\JobPipeline;
+use Belluga\Tenancy\Bootstrappers\DatabaseTenancyBootstrapper;
+use Belluga\Tenancy\Contracts\Syncable;
+use Belluga\Tenancy\Contracts\SyncMaster;
+use Belluga\Tenancy\Database\Concerns\CentralConnection;
+use Belluga\Tenancy\Database\Concerns\ResourceSyncing;
+use Belluga\Tenancy\Database\Models\TenantPivot;
+use Belluga\Tenancy\DatabaseConfig;
+use Belluga\Tenancy\Events\SyncedResourceChangedInForeignDatabase;
+use Belluga\Tenancy\Events\SyncedResourceSaved;
+use Belluga\Tenancy\Events\TenancyEnded;
+use Belluga\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Events\TenantCreated;
+use Belluga\Tenancy\Exceptions\ModelNotSyncMasterException;
+use Belluga\Tenancy\Jobs\CreateDatabase;
+use Belluga\Tenancy\Listeners\BootstrapTenancy;
+use Belluga\Tenancy\Listeners\RevertToCentralContext;
+use Belluga\Tenancy\Listeners\UpdateSyncedResource;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class ResourceSyncingTest extends TestCase
 {

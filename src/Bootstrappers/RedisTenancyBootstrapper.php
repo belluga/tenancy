@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Bootstrappers;
+namespace Belluga\Tenancy\Bootstrappers;
 
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Support\Facades\Redis;
-use Stancl\Tenancy\Contracts\TenancyBootstrapper;
-use Stancl\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Contracts\TenancyBootstrapper;
+use Belluga\Tenancy\Contracts\Tenant;
 
 class RedisTenancyBootstrapper implements TenancyBootstrapper
 {

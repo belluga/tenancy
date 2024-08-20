@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Listeners;
+namespace Belluga\Tenancy\Listeners;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 

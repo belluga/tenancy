@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Jobs;
+namespace Belluga\Tenancy\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -10,10 +10,10 @@ use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Stancl\Tenancy\Contracts\TenantWithDatabase;
-use Stancl\Tenancy\Database\DatabaseManager;
-use Stancl\Tenancy\Events\CreatingDatabase;
-use Stancl\Tenancy\Events\DatabaseCreated;
+use Belluga\Tenancy\Contracts\TenantWithDatabase;
+use Belluga\Tenancy\Database\DatabaseManager;
+use Belluga\Tenancy\Events\CreatingDatabase;
+use Belluga\Tenancy\Events\DatabaseCreated;
 
 class CreateDatabase implements ShouldQueue
 {

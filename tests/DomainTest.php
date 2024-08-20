@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Support\Facades\Route;
-use Stancl\Tenancy\Database\Concerns\HasDomains;
-use Stancl\Tenancy\Database\Models;
-use Stancl\Tenancy\Database\Models\Domain;
-use Stancl\Tenancy\Exceptions\DomainOccupiedByOtherTenantException;
-use Stancl\Tenancy\Exceptions\TenantCouldNotBeIdentifiedOnDomainException;
-use Stancl\Tenancy\Middleware\InitializeTenancyByDomain;
-use Stancl\Tenancy\Resolvers\DomainTenantResolver;
+use Belluga\Tenancy\Database\Concerns\HasDomains;
+use Belluga\Tenancy\Database\Models;
+use Belluga\Tenancy\Database\Models\Domain;
+use Belluga\Tenancy\Exceptions\DomainOccupiedByOtherTenantException;
+use Belluga\Tenancy\Exceptions\TenantCouldNotBeIdentifiedOnDomainException;
+use Belluga\Tenancy\Middleware\InitializeTenancyByDomain;
+use Belluga\Tenancy\Resolvers\DomainTenantResolver;
 
 class DomainTest extends TestCase
 {

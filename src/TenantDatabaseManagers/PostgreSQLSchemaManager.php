@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\TenantDatabaseManagers;
+namespace Belluga\Tenancy\TenantDatabaseManagers;
 
 use Illuminate\Database\Connection;
 use Illuminate\Support\Facades\DB;
-use Stancl\Tenancy\Contracts\TenantDatabaseManager;
-use Stancl\Tenancy\Contracts\TenantWithDatabase;
-use Stancl\Tenancy\Exceptions\NoConnectionSetException;
+use Belluga\Tenancy\Contracts\TenantDatabaseManager;
+use Belluga\Tenancy\Contracts\TenantWithDatabase;
+use Belluga\Tenancy\Exceptions\NoConnectionSetException;
 
 class PostgreSQLSchemaManager implements TenantDatabaseManager
 {

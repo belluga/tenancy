@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy;
+namespace Belluga\Tenancy;
 
 use MongoDB\Laravel\Eloquent\Builder;
 use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Support\Traits\Macroable;
-use Stancl\Tenancy\Contracts\TenancyBootstrapper;
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Exceptions\TenantCouldNotBeIdentifiedById;
+use Belluga\Tenancy\Contracts\TenancyBootstrapper;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Exceptions\TenantCouldNotBeIdentifiedById;
 
 class Tenancy
 {

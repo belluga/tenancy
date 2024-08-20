@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests\Etc;
+namespace Belluga\Tenancy\Tests\Etc;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
-use Stancl\Tenancy\Concerns\HasATenantsOption;
-use Stancl\Tenancy\Concerns\TenantAwareCommand;
+use Belluga\Tenancy\Concerns\HasATenantsOption;
+use Belluga\Tenancy\Concerns\TenantAwareCommand;
 
 class AddUserCommand extends Command
 {

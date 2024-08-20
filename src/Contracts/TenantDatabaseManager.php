@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Contracts;
+namespace Belluga\Tenancy\Contracts;
 
-use Stancl\Tenancy\Exceptions\NoConnectionSetException;
+use Belluga\Tenancy\Exceptions\NoConnectionSetException;
 
 interface TenantDatabaseManager
 {

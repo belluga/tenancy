@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Support\Facades\DB;
-use Stancl\Tenancy\Resolvers\DomainTenantResolver;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Resolvers\DomainTenantResolver;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class CachedTenantResolverTest extends TestCase
 {

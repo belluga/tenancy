@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Commands;
+namespace Belluga\Tenancy\Commands;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Database\Console\Migrations\MigrateCommand;
 use Illuminate\Database\Migrations\Migrator;
-use Stancl\Tenancy\Concerns\DealsWithMigrations;
-use Stancl\Tenancy\Concerns\ExtendsLaravelCommand;
-use Stancl\Tenancy\Concerns\HasATenantsOption;
-use Stancl\Tenancy\Events\DatabaseMigrated;
-use Stancl\Tenancy\Events\MigratingDatabase;
+use Belluga\Tenancy\Concerns\DealsWithMigrations;
+use Belluga\Tenancy\Concerns\ExtendsLaravelCommand;
+use Belluga\Tenancy\Concerns\HasATenantsOption;
+use Belluga\Tenancy\Events\DatabaseMigrated;
+use Belluga\Tenancy\Events\MigratingDatabase;
 
 class Migrate extends MigrateCommand
 {

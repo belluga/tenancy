@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Controllers;
+namespace Belluga\Tenancy\Controllers;
 
 use Exception;
 use Illuminate\Routing\Controller;
@@ -10,7 +10,7 @@ use Throwable;
 
 class TenantAssetsController extends Controller
 {
-    public static $tenancyMiddleware = 'Stancl\Tenancy\Middleware\InitializeTenancyByDomain';
+    public static $tenancyMiddleware = 'Belluga\Tenancy\Middleware\InitializeTenancyByDomain';
 
     public function __construct()
     {

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Foundation\Http\Exceptions\MaintenanceModeException;
 use Illuminate\Support\Facades\Route;
-use Stancl\Tenancy\Database\Concerns\MaintenanceMode;
-use Stancl\Tenancy\Middleware\CheckTenantForMaintenanceMode;
-use Stancl\Tenancy\Middleware\InitializeTenancyByDomain;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Database\Concerns\MaintenanceMode;
+use Belluga\Tenancy\Middleware\CheckTenantForMaintenanceMode;
+use Belluga\Tenancy\Middleware\InitializeTenancyByDomain;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 use Symfony\Component\HttpKernel\Exception\ServiceUnavailableHttpException;
 
 class MaintenanceModeTest extends TestCase

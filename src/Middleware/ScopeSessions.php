@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Middleware;
+namespace Belluga\Tenancy\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Stancl\Tenancy\Exceptions\TenancyNotInitializedException;
+use Belluga\Tenancy\Exceptions\TenancyNotInitializedException;
 
 class ScopeSessions
 {

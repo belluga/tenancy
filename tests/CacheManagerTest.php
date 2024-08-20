@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Support\Facades\Event;
-use Stancl\Tenancy\Bootstrappers\CacheTenancyBootstrapper;
-use Stancl\Tenancy\Events\TenancyInitialized;
-use Stancl\Tenancy\Listeners\BootstrapTenancy;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Bootstrappers\CacheTenancyBootstrapper;
+use Belluga\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Listeners\BootstrapTenancy;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class CacheManagerTest extends TestCase
 {

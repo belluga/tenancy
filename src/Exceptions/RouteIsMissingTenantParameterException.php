@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Exceptions;
+namespace Belluga\Tenancy\Exceptions;
 
 use Exception;
-use Stancl\Tenancy\Resolvers\PathTenantResolver;
+use Belluga\Tenancy\Resolvers\PathTenantResolver;
 
 class RouteIsMissingTenantParameterException extends Exception
 {

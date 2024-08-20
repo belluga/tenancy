@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Features;
+namespace Belluga\Tenancy\Features;
 
 use Illuminate\Http\RedirectResponse;
-use Stancl\Tenancy\Contracts\Feature;
-use Stancl\Tenancy\Tenancy;
+use Belluga\Tenancy\Contracts\Feature;
+use Belluga\Tenancy\Tenancy;
 
 class CrossDomainRedirect implements Feature
 {

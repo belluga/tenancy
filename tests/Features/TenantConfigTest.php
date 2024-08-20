@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests\Features;
+namespace Belluga\Tenancy\Tests\Features;
 
 use Illuminate\Support\Facades\Event;
-use Stancl\Tenancy\Events\TenancyEnded;
-use Stancl\Tenancy\Events\TenancyInitialized;
-use Stancl\Tenancy\Features\TenantConfig;
-use Stancl\Tenancy\Listeners\BootstrapTenancy;
-use Stancl\Tenancy\Listeners\RevertToCentralContext;
-use Stancl\Tenancy\Tests\Etc\Tenant;
-use Stancl\Tenancy\Tests\TestCase;
+use Belluga\Tenancy\Events\TenancyEnded;
+use Belluga\Tenancy\Events\TenancyInitialized;
+use Belluga\Tenancy\Features\TenantConfig;
+use Belluga\Tenancy\Listeners\BootstrapTenancy;
+use Belluga\Tenancy\Listeners\RevertToCentralContext;
+use Belluga\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Tests\TestCase;
 
 class TenantConfigTest extends TestCase
 {

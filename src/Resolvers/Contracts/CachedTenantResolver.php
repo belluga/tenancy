@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Resolvers\Contracts;
+namespace Belluga\Tenancy\Resolvers\Contracts;
 
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Contracts\Cache\Repository;
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Contracts\TenantResolver;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Contracts\TenantResolver;
 
 abstract class CachedTenantResolver implements TenantResolver
 {
@@ -66,9 +66,7 @@ abstract class CachedTenantResolver implements TenantResolver
 
     abstract public function resolveWithoutCache(...$args): Tenant;
 
-    public function resolved(Tenant $tenant, ...$args): void
-    {
-    }
+    public function resolved(Tenant $tenant, ...$args): void {}
 
     /**
      * Get all the arg combinations for resolve() that can be used to find this tenant.

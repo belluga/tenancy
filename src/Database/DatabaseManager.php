@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Database;
+namespace Belluga\Tenancy\Database;
 
 use Illuminate\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Database\DatabaseManager as BaseDatabaseManager;
-use Stancl\Tenancy\Contracts\ManagesDatabaseUsers;
-use Stancl\Tenancy\Contracts\TenantCannotBeCreatedException;
-use Stancl\Tenancy\Contracts\TenantWithDatabase;
-use Stancl\Tenancy\Exceptions\DatabaseManagerNotRegisteredException;
-use Stancl\Tenancy\Exceptions\TenantDatabaseAlreadyExistsException;
-use Stancl\Tenancy\Exceptions\TenantDatabaseUserAlreadyExistsException;
+use Belluga\Tenancy\Contracts\ManagesDatabaseUsers;
+use Belluga\Tenancy\Contracts\TenantCannotBeCreatedException;
+use Belluga\Tenancy\Contracts\TenantWithDatabase;
+use Belluga\Tenancy\Exceptions\DatabaseManagerNotRegisteredException;
+use Belluga\Tenancy\Exceptions\TenantDatabaseAlreadyExistsException;
+use Belluga\Tenancy\Exceptions\TenantDatabaseUserAlreadyExistsException;
 
 /**
  * @internal Class is subject to breaking changes in minor and patch versions.

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Support\Facades\Route;
-use Stancl\Tenancy\Exceptions\RouteIsMissingTenantParameterException;
-use Stancl\Tenancy\Exceptions\TenantCouldNotBeIdentifiedByPathException;
-use Stancl\Tenancy\Middleware\InitializeTenancyByPath;
-use Stancl\Tenancy\Resolvers\PathTenantResolver;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Exceptions\RouteIsMissingTenantParameterException;
+use Belluga\Tenancy\Exceptions\TenantCouldNotBeIdentifiedByPathException;
+use Belluga\Tenancy\Middleware\InitializeTenancyByPath;
+use Belluga\Tenancy\Resolvers\PathTenantResolver;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class PathIdentificationTest extends TestCase
 {

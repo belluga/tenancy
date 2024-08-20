@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Features;
+namespace Belluga\Tenancy\Features;
 
 use Laravel\Telescope\IncomingEntry;
 use Laravel\Telescope\Telescope;
-use Stancl\Tenancy\Contracts\Feature;
-use Stancl\Tenancy\Tenancy;
+use Belluga\Tenancy\Contracts\Feature;
+use Belluga\Tenancy\Tenancy;
 
 class TelescopeTags implements Feature
 {

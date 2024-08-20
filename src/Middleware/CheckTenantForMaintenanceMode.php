@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Middleware;
+namespace Belluga\Tenancy\Middleware;
 
 use Closure;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode;
-use Stancl\Tenancy\Exceptions\TenancyNotInitializedException;
+use Belluga\Tenancy\Exceptions\TenancyNotInitializedException;
 use Symfony\Component\HttpFoundation\IpUtils;
 
 class CheckTenantForMaintenanceMode extends CheckForMaintenanceMode

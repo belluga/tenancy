@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Facades;
+namespace Belluga\Tenancy\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -10,6 +10,6 @@ class Tenancy extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Stancl\Tenancy\Tenancy::class;
+        return \Belluga\Tenancy\Tenancy::class;
     }
 }

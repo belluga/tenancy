@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Support\Facades\Redis;
 use PDO;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -100,7 +100,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
                 '--realpath' => true,
                 '--force' => true,
             ],
-            'tenancy.bootstrappers.redis' => \Stancl\Tenancy\Bootstrappers\RedisTenancyBootstrapper::class,
+            'tenancy.bootstrappers.redis' => \Belluga\Tenancy\Bootstrappers\RedisTenancyBootstrapper::class,
             'queue.connections.central' => [
                 'driver' => 'sync',
                 'central' => true,
@@ -109,21 +109,21 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
             'tenancy.tenant_model' => Tenant::class, // Use test tenant w/ DBs & domains
         ]);
 
-        $app->singleton(\Stancl\Tenancy\Bootstrappers\RedisTenancyBootstrapper::class);
+        $app->singleton(\Belluga\Tenancy\Bootstrappers\RedisTenancyBootstrapper::class);
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            \Stancl\Tenancy\TenancyServiceProvider::class,
+            \Belluga\Tenancy\TenancyServiceProvider::class,
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'Tenancy' => \Stancl\Tenancy\Facades\Tenancy::class,
-            'GlobalCache' => \Stancl\Tenancy\Facades\GlobalCache::class,
+            'Tenancy' => \Belluga\Tenancy\Facades\Tenancy::class,
+            'GlobalCache' => \Belluga\Tenancy\Facades\GlobalCache::class,
         ];
     }
 

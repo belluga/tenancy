@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy;
+namespace Belluga\Tenancy;
 
 use Ramsey\Uuid\Uuid;
-use Stancl\Tenancy\Contracts\UniqueIdentifierGenerator;
+use Belluga\Tenancy\Contracts\UniqueIdentifierGenerator;
 
 class UUIDGenerator implements UniqueIdentifierGenerator
 {

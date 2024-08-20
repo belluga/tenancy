@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Exceptions;
+namespace Belluga\Tenancy\Exceptions;
 
 use Facade\IgnitionContracts\BaseSolution;
 use Facade\IgnitionContracts\ProvidesSolution;
 use Facade\IgnitionContracts\Solution;
-use Stancl\Tenancy\Contracts\TenantCouldNotBeIdentifiedException;
+use Belluga\Tenancy\Contracts\TenantCouldNotBeIdentifiedException;
 
 // todo: in v4 this should be suffixed with Exception
 class TenantCouldNotBeIdentifiedById extends TenantCouldNotBeIdentifiedException implements ProvidesSolution

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Events\Contracts;
+namespace Belluga\Tenancy\Events\Contracts;
 
-use Stancl\Tenancy\Tenancy;
+use Belluga\Tenancy\Tenancy;
 
 abstract class TenancyEvent
 {

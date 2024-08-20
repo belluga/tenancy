@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Concerns;
+namespace Belluga\Tenancy\Concerns;
 
-use Stancl\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Contracts\Tenant;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 

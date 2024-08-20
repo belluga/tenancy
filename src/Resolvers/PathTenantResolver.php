@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Resolvers;
+namespace Belluga\Tenancy\Resolvers;
 
 use Illuminate\Routing\Route;
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Exceptions\TenantCouldNotBeIdentifiedByPathException;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Exceptions\TenantCouldNotBeIdentifiedByPathException;
 
 class PathTenantResolver extends Contracts\CachedTenantResolver
 {

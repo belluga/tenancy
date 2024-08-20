@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Contracts;
+namespace Belluga\Tenancy\Contracts;
 
 /**
  * TenancyBootstrappers are classes that make your application tenant-aware automatically.

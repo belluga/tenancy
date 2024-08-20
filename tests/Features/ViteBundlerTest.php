@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use Stancl\Tenancy\Features\ViteBundler;
-use Stancl\Tenancy\Tests\Etc\Tenant;
-use Stancl\Tenancy\Tests\TestCase;
-use Stancl\Tenancy\Vite as StanclVite;
+use Belluga\Tenancy\Features\ViteBundler;
+use Belluga\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Tests\TestCase;
+use Belluga\Tenancy\Vite as StanclVite;
 
 class ViteBundlerTest extends TestCase
 {

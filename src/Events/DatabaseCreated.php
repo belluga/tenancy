@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Events;
+namespace Belluga\Tenancy\Events;
 
-class DatabaseCreated extends Contracts\TenantEvent
-{
-}
+class DatabaseCreated extends Contracts\TenantEvent {}

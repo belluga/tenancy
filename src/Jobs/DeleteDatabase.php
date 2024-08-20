@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Jobs;
+namespace Belluga\Tenancy\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Stancl\Tenancy\Contracts\TenantWithDatabase;
-use Stancl\Tenancy\Events\DatabaseDeleted;
-use Stancl\Tenancy\Events\DeletingDatabase;
+use Belluga\Tenancy\Contracts\TenantWithDatabase;
+use Belluga\Tenancy\Events\DatabaseDeleted;
+use Belluga\Tenancy\Events\DeletingDatabase;
 
 class DeleteDatabase implements ShouldQueue
 {

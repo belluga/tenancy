@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Foundation\Auth\User as Authenticable;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Schema;
-use Stancl\JobPipeline\JobPipeline;
-use Stancl\Tenancy\Events\TenantCreated;
-use Stancl\Tenancy\Jobs\CreateDatabase;
-use Stancl\Tenancy\Jobs\MigrateDatabase;
-use Stancl\Tenancy\Jobs\SeedDatabase;
-use Stancl\Tenancy\TenantDatabaseManagers\MySQLDatabaseManager;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\JobPipeline\JobPipeline;
+use Belluga\Tenancy\Events\TenantCreated;
+use Belluga\Tenancy\Jobs\CreateDatabase;
+use Belluga\Tenancy\Jobs\MigrateDatabase;
+use Belluga\Tenancy\Jobs\SeedDatabase;
+use Belluga\Tenancy\TenantDatabaseManagers\MySQLDatabaseManager;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class DatabasePreparationTest extends TestCase
 {

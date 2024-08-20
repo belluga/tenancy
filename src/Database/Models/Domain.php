@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Database\Models;
+namespace Belluga\Tenancy\Database\Models;
 
 use MongoDB\Laravel\Eloquent\Model;
-use Stancl\Tenancy\Contracts;
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Database\Concerns;
-use Stancl\Tenancy\Events;
+use Belluga\Tenancy\Contracts;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Database\Concerns;
+use Belluga\Tenancy\Events;
 
 /**
  * @property string $domain

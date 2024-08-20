@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Middleware;
+namespace Belluga\Tenancy\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
-use Stancl\Tenancy\Exceptions\RouteIsMissingTenantParameterException;
-use Stancl\Tenancy\Resolvers\PathTenantResolver;
-use Stancl\Tenancy\Tenancy;
+use Belluga\Tenancy\Exceptions\RouteIsMissingTenantParameterException;
+use Belluga\Tenancy\Resolvers\PathTenantResolver;
+use Belluga\Tenancy\Tenancy;
 
 class InitializeTenancyByPath extends IdentificationMiddleware
 {
@@ -38,7 +38,9 @@ class InitializeTenancyByPath extends IdentificationMiddleware
         // simply injected into some route controller action.
         if ($route->parameterNames()[0] === PathTenantResolver::$tenantParameterName) {
             return $this->initializeTenancy(
-                $request, $next, $route
+                $request,
+                $next,
+                $route
             );
         } else {
             throw new RouteIsMissingTenantParameterException;

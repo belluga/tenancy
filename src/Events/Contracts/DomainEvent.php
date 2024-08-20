@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Events\Contracts;
+namespace Belluga\Tenancy\Events\Contracts;
 
 use Illuminate\Queue\SerializesModels;
-use Stancl\Tenancy\Contracts\Domain;
+use Belluga\Tenancy\Contracts\Domain;
 
 abstract class DomainEvent
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Contracts;
+namespace Belluga\Tenancy\Contracts;
 
 abstract class TenantCannotBeCreatedException extends \Exception
 {

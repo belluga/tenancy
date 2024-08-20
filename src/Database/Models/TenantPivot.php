@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Database\Models;
+namespace Belluga\Tenancy\Database\Models;
 
 use MongoDB\Laravel\Relations\Pivot;
-use Stancl\Tenancy\Contracts\Syncable;
+use Belluga\Tenancy\Contracts\Syncable;
 
 class TenantPivot extends Pivot
 {

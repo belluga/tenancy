@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Tests;
+namespace Belluga\Tenancy\Tests;
 
 use Illuminate\Support\Facades\Route;
-use Stancl\Tenancy\Middleware\InitializeTenancyByRequestData;
-use Stancl\Tenancy\Tests\Etc\Tenant;
+use Belluga\Tenancy\Middleware\InitializeTenancyByRequestData;
+use Belluga\Tenancy\Tests\Etc\Tenant;
 
 class RequestDataIdentificationTest extends TestCase
 {

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Features;
+namespace Belluga\Tenancy\Features;
 
 use Carbon\Carbon;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
-use Stancl\Tenancy\Contracts\Feature;
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Database\Models\ImpersonationToken;
-use Stancl\Tenancy\Tenancy;
+use Belluga\Tenancy\Contracts\Feature;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Database\Models\ImpersonationToken;
+use Belluga\Tenancy\Tenancy;
 
 class UserImpersonation implements Feature
 {

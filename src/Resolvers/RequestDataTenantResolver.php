@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Resolvers;
+namespace Belluga\Tenancy\Resolvers;
 
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Exceptions\TenantCouldNotBeIdentifiedByRequestDataException;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Exceptions\TenantCouldNotBeIdentifiedByRequestDataException;
 
 class RequestDataTenantResolver extends Contracts\CachedTenantResolver
 {

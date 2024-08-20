@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy;
+namespace Belluga\Tenancy;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Support\ServiceProvider;
-use Stancl\Tenancy\Bootstrappers\FilesystemTenancyBootstrapper;
-use Stancl\Tenancy\Contracts\Domain;
-use Stancl\Tenancy\Contracts\Tenant;
-use Stancl\Tenancy\Resolvers\DomainTenantResolver;
+use Belluga\Tenancy\Bootstrappers\FilesystemTenancyBootstrapper;
+use Belluga\Tenancy\Contracts\Domain;
+use Belluga\Tenancy\Contracts\Tenant;
+use Belluga\Tenancy\Resolvers\DomainTenantResolver;
 
 class TenancyServiceProvider extends ServiceProvider
 {

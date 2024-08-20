@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\TenantDatabaseManagers;
+namespace Belluga\Tenancy\TenantDatabaseManagers;
 
-use Stancl\Tenancy\Contracts\TenantDatabaseManager;
-use Stancl\Tenancy\Contracts\TenantWithDatabase;
+use Belluga\Tenancy\Contracts\TenantDatabaseManager;
+use Belluga\Tenancy\Contracts\TenantWithDatabase;
 
 class SQLiteDatabaseManager implements TenantDatabaseManager
 {

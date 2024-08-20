@@ -7,11 +7,11 @@ namespace App\Providers;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Stancl\JobPipeline\JobPipeline;
-use Stancl\Tenancy\Events;
-use Stancl\Tenancy\Jobs;
-use Stancl\Tenancy\Listeners;
-use Stancl\Tenancy\Middleware;
+use Belluga\JobPipeline\JobPipeline;
+use Belluga\Tenancy\Events;
+use Belluga\Tenancy\Jobs;
+use Belluga\Tenancy\Listeners;
+use Belluga\Tenancy\Middleware;
 
 class TenancyServiceProvider extends ServiceProvider
 {

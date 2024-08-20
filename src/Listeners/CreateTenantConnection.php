@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Stancl\Tenancy\Listeners;
+namespace Belluga\Tenancy\Listeners;
 
-use Stancl\Tenancy\Database\DatabaseManager;
-use Stancl\Tenancy\Events\Contracts\TenantEvent;
+use Belluga\Tenancy\Database\DatabaseManager;
+use Belluga\Tenancy\Events\Contracts\TenantEvent;
 
 class CreateTenantConnection
 {
